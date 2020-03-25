@@ -2,14 +2,14 @@
 
 
 /**
- * Graphical interface for the home page if the user is an administrator.
+ * Graphical interface for the home page if the user is a case worker.
  *
  * @author Dean Rimmer
- * @version 1.0
+ * @version 1.1
  */
 import javax.swing.*;
 import java.awt.*;
-public class AdminGUI
+public class CaseWorkerGUI
 {   
     public static void main(String args[]){
         //Frame generation
@@ -19,10 +19,10 @@ public class AdminGUI
         
         //Component Generation
         JLabel title = new JLabel("Home");
-        JButton openNewCase = new JButton("Open New Case");
-        JButton closeCase = new JButton("Close Case");
-        JButton viewCases = new JButton("View All Cases");
-        JButton manageCases = new JButton("Manage Cases");
+        JButton viewAppointments = new JButton("View My Appointments");
+        JButton followUpAppointment = new JButton("Create Follow-up Appointment");
+        JButton cancelAppointment = new JButton("Cancel Appointment");
+        JButton editAppointment = new JButton("Edit Appointment");
         JButton back = new JButton("Back");
         JButton logOut = new JButton("Log Out");
         
@@ -41,7 +41,7 @@ public class AdminGUI
         gbc.gridwidth = 2;
         panel.add(title, gbc);
         
-        //open case constraints
+        //view appointments constraints
         gbc.fill = GridBagConstraints.HORIZONTAL;
         gbc.insets = new Insets(25,0,0,0);
         gbc.gridwidth = 1;
@@ -50,34 +50,34 @@ public class AdminGUI
         gbc.ipady = 50;
         gbc.ipadx = 50;
         gbc.insets = new Insets(35,0,0,5);
-        panel.add(openNewCase, gbc);
+        panel.add(viewAppointments, gbc);
         
-        //close case constraints
+        //cancel appointment constraints
         gbc.fill = GridBagConstraints.HORIZONTAL;
         gbc.gridx = 1;
         gbc.gridy = 1;      
         gbc.ipady = 50;
         gbc.ipadx = 50;
         gbc.insets = new Insets(35,5,0,0);
-        panel.add(closeCase, gbc);
+        panel.add(cancelAppointment, gbc);
         
-        //view cases constraints
+        //edit appointment constraints
         gbc.fill = GridBagConstraints.HORIZONTAL;
         gbc.gridx = 0;
         gbc.gridy = 2;
         gbc.ipady = 50;
         gbc.ipadx = 50;
         gbc.insets = new Insets(35,0,0,5);
-        panel.add(viewCases, gbc);
+        panel.add(editAppointment, gbc);
         
-        //manage cases contraints
+        //follow up appointment contraints
         gbc.fill = GridBagConstraints.HORIZONTAL;
         gbc.gridx = 1;
         gbc.gridy = 2;
         gbc.ipady = 50;
         gbc.ipadx = 50;
         gbc.insets = new Insets(35,5,0,0);
-        panel.add(manageCases, gbc);
+        panel.add(followUpAppointment, gbc);
         
         //back button contraints
         gbc.fill = GridBagConstraints.HORIZONTAL;

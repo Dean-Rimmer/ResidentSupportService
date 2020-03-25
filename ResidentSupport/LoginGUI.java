@@ -50,13 +50,12 @@ public class LoginGUI
         gbc.gridy = 1;
         panel.add(password, gbc);
         
-        
         gbc.gridx = 0;
         gbc.gridy = 2;
         gbc.gridwidth = 2;
         panel.add(login, gbc);
        
-        
+        //setting the frame
         frame.getContentPane().add(BorderLayout.CENTER, panel);
         frame.setVisible(true);
     }

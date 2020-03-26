@@ -22,7 +22,7 @@ public class AdminGUI
         JButton openNewCase = new JButton("Open New Case");
         JButton closeCase = new JButton("Close Case");
         JButton viewCases = new JButton("View All Cases");
-        JButton manageCases = new JButton("Manage Cases");
+        JButton outstandingAppointments = new JButton("Outstanding Appointments");
         JButton back = new JButton("Back");
         JButton logOut = new JButton("Log Out");
         
@@ -70,14 +70,14 @@ public class AdminGUI
         gbc.insets = new Insets(35,0,0,5);
         panel.add(viewCases, gbc);
         
-        //manage cases contraints
+        //outstanding appointments contraints
         gbc.fill = GridBagConstraints.HORIZONTAL;
         gbc.gridx = 1;
         gbc.gridy = 2;
         gbc.ipady = 50;
         gbc.ipadx = 50;
         gbc.insets = new Insets(35,5,0,0);
-        panel.add(manageCases, gbc);
+        panel.add(outstandingAppointments, gbc);
         
         //back button contraints
         gbc.fill = GridBagConstraints.HORIZONTAL;

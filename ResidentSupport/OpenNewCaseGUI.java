@@ -2,7 +2,7 @@
 
 
 /**
- * Graphical interface for the close case interface, will be used by both the case worker and the admininstrators.
+ * Graphical interface for the open case interface, will be used by admininstrators.
  *
  * @author Dean Rimmer
  * @version 1.1

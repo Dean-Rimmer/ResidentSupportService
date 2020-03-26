@@ -13,12 +13,12 @@ public class ViewAllCasesGUI
 {   
     public static void main(String args[]){
         //Frame generation
-        JFrame frame = new JFrame("Resident Support Service - Home Page");
+        JFrame frame = new JFrame("Resident Support Service - View Cases");
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         frame.setSize(600,600);
         
         //Component Generation
-        JLabel title = new JLabel("Home");
+        JLabel title = new JLabel("View Cases");
         JButton viewAppointments = new JButton("View My Appointments");
         JButton followUpAppointment = new JButton("Create Follow-up Appointment");
         JButton cancelAppointment = new JButton("Cancel Appointment");

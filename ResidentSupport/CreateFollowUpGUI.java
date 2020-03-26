@@ -13,12 +13,12 @@ public class CreateFollowUpGUI
 {   
     public static void main(String args[]){
         //Frame generation
-        JFrame frame = new JFrame("Resident Support Service - Close Case");
+        JFrame frame = new JFrame("Resident Support Service - Follow-up Appointment");
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         frame.setSize(600,600);
         
         //Component Generation
-        JLabel title = new JLabel("Close Case");
+        JLabel title = new JLabel("Follow-up Appointment");
         JLabel caseIDLabel = new JLabel("Case ID:");
         JLabel firstNameLabel = new JLabel("First Name:");
         JLabel lastNameLabel = new JLabel("Last Name:");

@@ -19,7 +19,7 @@ public class RSSDatabaseFunctions {
      */
     public void connectToDatabase(){
         database = new RSSDatabaseConnect();
-        database.connect("C:\\Users\\Kyle\\Desktop\\University\\Software Engineering\\Database\\ResidentSupportService.db");
+        database.connect("");
    }
    
    /**
